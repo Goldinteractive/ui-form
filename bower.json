@@ -17,7 +17,7 @@
     "gi-ui-buttons": "master",
     "gi-ui-slider": "master",
     "gi-ui-checkbox": "master",
-    "gi-ui-toggle": "~0.0.3",
+    "gi-ui-toggle": "master",
     "gi-ui-grid": "master",
     "gi-ui-textfield": "*",
     "gi-ui-select": "~0.0.2",

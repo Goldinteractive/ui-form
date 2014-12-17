@@ -9,6 +9,5 @@
   },
   "_source": "git://github.com/Goldinteractive/ui-grid.git",
   "_target": "master",
-  "_originalSource": "gi-ui-grid",
-  "_direct": true
+  "_originalSource": "gi-ui-grid"
 }

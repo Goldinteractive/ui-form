@@ -35,7 +35,6 @@ $select-border-radius: 0 !default;
 	background: $select-bg-color;
 	position: relative;
 	border-radius: $select-border-radius;
-	@include clearfix();
 }
 
 .selectric .label {

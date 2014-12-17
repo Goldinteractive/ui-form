@@ -27,6 +27,5 @@
   },
   "_source": "git://github.com/Goldinteractive/ui-select.git",
   "_target": "~0.0.2",
-  "_originalSource": "gi-ui-select",
-  "_direct": true
+  "_originalSource": "gi-ui-select"
 }

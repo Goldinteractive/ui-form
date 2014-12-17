@@ -9,6 +9,5 @@
   },
   "_source": "git://github.com/Goldinteractive/ui-textfield.git",
   "_target": "*",
-  "_originalSource": "gi-ui-textfield",
-  "_direct": true
+  "_originalSource": "gi-ui-textfield"
 }

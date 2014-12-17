@@ -1,14 +1,13 @@
 {
   "name": "gi-ui-checkbox",
   "homepage": "https://github.com/Goldinteractive/ui-checkbox",
-  "_release": "4bb8c2b453",
+  "_release": "4500782934",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "4bb8c2b45321dc78fc79b406b2000716e8def36b"
+    "commit": "45007829344b009a3ad5b9bfdd17d6719818dfa5"
   },
   "_source": "git://github.com/Goldinteractive/ui-checkbox.git",
   "_target": "master",
-  "_originalSource": "gi-ui-checkbox",
-  "_direct": true
+  "_originalSource": "gi-ui-checkbox"
 }

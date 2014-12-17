@@ -1,14 +1,13 @@
 {
   "name": "gi-ui-toggle",
   "homepage": "https://github.com/Goldinteractive/ui-toggle",
-  "version": "0.0.3",
-  "_release": "0.0.3",
+  "_release": "dca9676d83",
   "_resolution": {
-    "type": "version",
-    "tag": "0.0.3",
-    "commit": "b0672e8fc4a0ba57dd96039ef2f62907d28335a3"
+    "type": "branch",
+    "branch": "master",
+    "commit": "dca9676d83852fe9b4f8e2725e1fbb2c1ef34a98"
   },
   "_source": "git://github.com/Goldinteractive/ui-toggle.git",
-  "_target": "~0.0.3",
+  "_target": "master",
   "_originalSource": "gi-ui-toggle"
 }

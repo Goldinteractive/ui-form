@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "gi-ui-buttons": "~0.1.0",
-    "gi-ui-slider": "~0.0.3",
+    "gi-ui-slider": "master",
     "gi-ui-checkbox": "master",
     "gi-ui-toggle": "~0.0.3",
     "gi-ui-grid": "master",

@@ -1,0 +1,14 @@
+{
+  "name": "gi-ui-textfield",
+  "homepage": "https://github.com/Goldinteractive/ui-textfield",
+  "_release": "560f02829d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "560f02829df07a289c6293d49e94a24b1f1eb595"
+  },
+  "_source": "git://github.com/Goldinteractive/ui-textfield.git",
+  "_target": "*",
+  "_originalSource": "gi-ui-textfield",
+  "_direct": true
+}

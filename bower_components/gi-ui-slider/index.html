@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="bower_components/nouislider/src/jquery.nouislider.css">
+	<link rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/303907c6-81e5-4c39-9e43-c01f800f62b8.css"/>
+	<style>
+		body {
+			font-family:'Aktiv Grotesk W01 Light1370681', Helvetica, Arial, sans-serif;
+			/*font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;*/
+		}
+		h1,h2,h3,h4 {
+			font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<h1>Slider</h1>
+	<a href="http://refreshless.com/nouislider/">No ui slider doc</a>
+
+	<br />
+	<br />
+
+	<div id="slider1" class="ui-slider"></div>
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<div id="slider2" class="ui-slider"></div>
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<div id="slider3" class="ui-slider tooltip"></div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/nouislider/distribute/jquery.nouislider.all.js"></script>
+	<script>
+		$("#slider1").noUiSlider({
+			start: [20, 80],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 100
+			}
+		});
+
+		$("#slider2").noUiSlider({
+			start: [20, 80],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 100
+			}
+		}).Link('upper').to('-inline-<span class="value max-val"></span>', function(value) {
+			$(this).html(value);
+		})
+		.Link('lower').to('-inline-<span class="value min-val"></span>', function(value) {
+			$(this).html(value);
+		});
+
+		$("#slider3").noUiSlider({
+			start: [300, 800],
+			connect: true,
+			range: {
+				'min': 200,
+				'max': 1100
+			}
+		}).Link('upper').to('-inline-<span class="value max-val"></span>', function(value) {
+			$(this).html(value);
+		})
+		.Link('lower').to('-inline-<span class="value min-val"></span>', function(value) {
+			$(this).html(value);
+		});
+	</script>
+</body>
+</html>

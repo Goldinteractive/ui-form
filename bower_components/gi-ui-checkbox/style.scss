@@ -1,0 +1,130 @@
+@import "compass";
+
+
+$checkbox-bg-color: white !default;
+$checkbox-checked-bg-color: #0075a2 !default;
+$checkbox-border: 1px solid #cfcfbe !default;
+$checkbox-hover-color: #cfcfbe !default;
+$checkbox-size: 20px !default;
+
+$checkbox-marker-size: 2px !default;
+$checkbox-marker-color: #333333 !default;
+$checkbox-marker-active-color: white !default;
+
+$success-color: green !default;
+$error-color: #cc0000 !default;
+
+.ui-checkbox {
+	position: relative;
+	z-index: 1;
+	label {
+		position: relative;
+		display: inline-block;
+	}
+	// this part has been removed because we use already the same checkboxes on the website
+	input[type=checkbox] {
+		visibility: hidden;
+		position: absolute;
+
+		&:checked + .ui-checkbox-marker {
+			border-color: $checkbox-checked-bg-color;
+			background: $checkbox-checked-bg-color;
+			//@include transition(all 0.15s ease-in-out 0.3s);
+			&:before {
+				border-color: $checkbox-marker-active-color;
+				@include opacity(1);
+				@include opacity(100);
+				@include animation(marker-checked 0.4s ease-out);
+			}
+			&:after {
+				@include border-radius(0px);
+				top:0;
+				left:0;
+				width: $checkbox-size;
+				height: $checkbox-size;
+			}
+		}
+	}
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	&:hover {
+		.ui-checkbox-marker {
+			background: $checkbox-hover-color;
+			&:before {
+				@include opacity(20);
+			}
+		}
+
+	}
+	.ui-checkbox-marker {
+		top: 0;
+		left: 0;
+		position: relative;
+		background: $checkbox-bg-color;
+		width: $checkbox-size;
+		height: $checkbox-size;
+		border: $checkbox-border;
+		@include transition(all 0.15s ease-in-out);
+		&:after, &:before {
+			content: '';
+			position: absolute;
+			display: block;
+		}
+		&:before {
+			background: transparent;
+			overflow: hidden;
+			top:50%;
+			left:50%;
+			margin-top: -($checkbox-size / 2) / 2 - $checkbox-marker-size / 2;
+			margin-left: -($checkbox-size / 2) / 2 - $checkbox-marker-size / 2;
+			height: $checkbox-size / 4;
+			width: $checkbox-size / 2;
+			border: $checkbox-marker-size solid  $checkbox-marker-active-color;
+			border-top: none;
+			border-right: none;
+			z-index: 1;
+
+			@include opacity(0);
+			@include transition(border 0.1s ease-in-out 0.3s);
+			@include transform(rotate(-45deg));
+		}
+		&:after {
+			width: $checkbox-size;
+			height: $checkbox-size;
+			background: $checkbox-bg-color;
+			top: 0;
+			left: 0;
+			z-index:-1;
+			@include transition(background 0.3s ease-in-out);
+		}
+	}
+	.ui-checkbox-label {
+		margin-left: 5px;
+	}
+	&.error {
+		.ui-checkbox-marker {
+			border-color: $error-color;
+		}
+	}
+	&.success {
+		.ui-checkbox-marker {
+			border-color: $success-color;
+		}
+	}
+}
+
+@include keyframes(marker-checked) {
+	0% {
+
+		@include transform(rotate(-45deg) scale(1) translateX(0));
+	}
+	50% {
+		@include transform(rotate(-45deg) scale(1.8) translateX($checkbox-size / 6));
+	}
+	100% {
+		@include transform(rotate(-45deg) scale(1) translateX(0));
+	}
+}

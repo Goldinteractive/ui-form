@@ -20,7 +20,8 @@
     "gi-ui-toggle": "~0.0.3",
     "gi-ui-grid": "master",
     "gi-ui-textfield": "*",
-    "gi-ui-select": "~0.0.2"
+    "gi-ui-select": "~0.0.2",
+    "jquery": "~2.1.2"
   },
   "resolutions": {
     "gi-ui-buttons": "master",

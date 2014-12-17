@@ -36,3 +36,16 @@ $form-labels-vertial-margin: $textfield-label-vertical-margin !default;
 		}
 	}
 }
+
+.ui-form-feedback {
+	padding: 1rem;
+	@include box-sizing(border-box);
+	&.success {
+		border: 1px solid $success-color;
+		color: $success-color;
+	}
+	&.error {
+		border: 1px solid $error-color;
+		color: $error-color;
+	}
+}

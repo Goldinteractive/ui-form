@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="bower_components/nouislider/src/jquery.nouislider.css">
+	<link rel="stylesheet" href="bower_components/ladda/dist/ladda.min.css">
 	<link rel="stylesheet" href="demo.css">
 
 	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/303907c6-81e5-4c39-9e43-c01f800f62b8.css"/>
@@ -145,10 +146,9 @@
 					</label>
 				</div>
 			</div>
-
 			<div class="ui-form-field g-12 g-mobile-10 text-right">
-				<input type="reset" value="Reset" class="ui-btn no-shadow" />
-				<input type="submit" value="Send form" class="ui-btn no-shadow primary" />
+				<button type="reset" class="ui-btn no-shadow">Reset</button>
+				<button type="submit" data-style="zoom-out" class="ui-btn no-shadow primary ladda-button">Send form</button>
 			</div>
 		</form>
 		<h1 class="g-12 g-mobile-10">Form feedback</h1>
@@ -158,6 +158,9 @@
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/nouislider/distribute/jquery.nouislider.all.js"></script>
 	<script src="bower_components/jquery-selectric/dist/jquery.selectric.js"></script>
+	<script src="bower_components/spin.js/spin.js"></script>
+	<script src="bower_components/ladda/js/ladda.js"></script>
+	<script src="bower_components/ladda/js/ladda.jquery.js"></script>
 	<script>
 		$("#slider1").noUiSlider({
 			start: 50,
@@ -177,6 +180,10 @@
 				duration: 200
 			}
 		});
+		$( 'button[type=submit]').ladda('bind',{ timeout: 5000 });
+		$('form').on('submit',function(e){
+			e.preventDefault();
+		})
 	</script>
 </body>
 </html>

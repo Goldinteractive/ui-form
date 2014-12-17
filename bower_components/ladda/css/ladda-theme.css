@@ -1,0 +1,74 @@
+/*
+Error: Undefined mixin 'buttonColor'.
+        on line 39 of /Users/gianlucaguarini/Sites/www/goldinteractive-ui/ui-form/bower_components/ladda/css/ladda-theme.scss, in `buttonColor'
+        from line 39 of /Users/gianlucaguarini/Sites/www/goldinteractive-ui/ui-form/bower_components/ladda/css/ladda-theme.scss
+
+34: 	&:hover {
+35: 		border-color: rgba( 0, 0, 0, 0.07 );
+36: 		background-color: #888;
+37: 	}
+38: 
+39: 	@include buttonColor( 'green', $green );
+40: 	@include buttonColor( 'blue', $blue );
+41: 	@include buttonColor( 'red', $red );
+42: 	@include buttonColor( 'purple', $purple );
+43: 	@include buttonColor( 'mint', $mint );
+44: 
+
+Backtrace:
+/Users/gianlucaguarini/Sites/www/goldinteractive-ui/ui-form/bower_components/ladda/css/ladda-theme.scss:39:in `buttonColor'
+/Users/gianlucaguarini/Sites/www/goldinteractive-ui/ui-form/bower_components/ladda/css/ladda-theme.scss:39
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:98:in `block in with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:98:in `with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/engine.rb:268:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:329:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
+/Library/Ruby/Gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `call'
+/Library/Ruby/Gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:244:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:313:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'buttonColor'.\A         on line 39 of /Users/gianlucaguarini/Sites/www/goldinteractive-ui/ui-form/bower_components/ladda/css/ladda-theme.scss, in `buttonColor'\A         from line 39 of /Users/gianlucaguarini/Sites/www/goldinteractive-ui/ui-form/bower_components/ladda/css/ladda-theme.scss\A \A 34: 	&:hover {\A 35: 		border-color: rgba( 0, 0, 0, 0.07 );\A 36: 		background-color: #888;\A 37: 	}\A 38: \A 39: 	@include buttonColor( 'green', $green );\A 40: 	@include buttonColor( 'blue', $blue );\A 41: 	@include buttonColor( 'red', $red );\A 42: 	@include buttonColor( 'purple', $purple );\A 43: 	@include buttonColor( 'mint', $mint );\A 44: "; }

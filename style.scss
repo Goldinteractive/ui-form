@@ -1,0 +1,26 @@
+@import "compass";
+
+// this variable could come from the text field scss file
+$textfield-label-vertical-margin:  0.5rem !default;
+
+// Default variables
+$form-field-vertial-margin: 0.5rem !default;
+$form-labels-vertial-margin: $textfield-label-vertical-margin !default;
+
+
+
+.ui-form {
+
+}
+.ui-form-field {
+	margin-top: $form-field-vertial-margin;
+	margin-bottom: $form-field-vertial-margin;
+	label, p {
+		margin-top: $form-labels-vertial-margin;
+		margin-bottom: $form-labels-vertial-margin;
+		display: inline-block;
+	}
+	.inline-field {
+		display: inline-block;
+	}
+}

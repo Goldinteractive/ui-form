@@ -1,0 +1,31 @@
+{
+  "name": "ui-form",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Goldinteractive/ui-form",
+  "authors": [
+    "gold interactive"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gi-ui-buttons": "~0.1.0",
+    "gi-ui-slider": "~0.0.3",
+    "gi-ui-checkbox": "master",
+    "gi-ui-toggle": "~0.0.3",
+    "gi-ui-grid": "master",
+    "gi-ui-textfield": "*",
+    "gi-ui-select": "~0.0.2"
+  },
+  "resolutions": {
+    "gi-ui-buttons": "master",
+    "gi-ui-slider": "master",
+    "gi-ui-toggle": "master"
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="bower_components/nouislider/src/jquery.nouislider.css">
+	<link rel="stylesheet" href="demo.css">
+
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/303907c6-81e5-4c39-9e43-c01f800f62b8.css"/>
+	<style>
+		body {
+			font-family:'Aktiv Grotesk W01 Light1370681', Helvetica, Arial, sans-serif;
+			margin:0;
+			/*font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;*/
+		}
+		h1,h2,h3,h4 {
+			font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;
+		}
+		button,input, textarea {
+			font-family:'Aktiv Grotesk W01 Light1370681', Helvetica, Arial, sans-serif;
+		}
+		i {
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAATVJREFUWIXtlj1Ow0AQRr9d0/oK3IG1rxG31CjiOsABInECmtBR2X12fIcoF6CgQTAfTSwRS4l3/UPDPsmF5ZnZ59XaM0AikUgk/hcmJKgsy4qkm2NBklsRkaG4q5BiqloZY9bTtQAABwDziHV474N2+BxFUTA0NkoscPFrknfGmN8vUXvv65g6s4t57/fOuXcADzg9w3VMHTunVIeIPKnqWlW/x9ZYRAwA2rZ9zrLsFsDnmPzFxABgt9u9kFyR/IjNXVQMAETkLc/zx9i8xcUAoGmar9icPxEbQxKLJeoHG9NSphIkZq3dkjyce66qlbX25nj7istNerCBA4FjzxDOuU03fZC8F5HN1JqjxPrz2aUdC52/+oxq4v35zNqTb2h1vDqC5q9ZxIbOXI9oqUQikUgsyA+n1HIzLAkSHwAAAABJRU5ErkJggg==');
+			background-repeat: no-repeat;
+			width: 38px;
+			height: 38px;
+		}
+		.text-right {
+			text-align:right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="g-12 g-mobile-10">Form</h1>
+		<form class="ui-form">
+			<div class="ui-form-field g-6 g-mobile-10">
+				<div class="ui-textfield">
+					<label for="name">Name</label>
+					<input id="name" type="text" />
+				</div>
+			</div>
+
+			<div class="ui-form-field g-6 g-mobile-10">
+				<div class="ui-textfield">
+					<label for="surname">Surname*</label>
+					<input id="surname" required type="text" />
+				</div>
+			</div>
+			<div class="ui-form-field g-12 g-mobile-10">
+				<label for="slider1">Age</label><br />
+				<div id="slider1" class="ui-slider tooltip"></div>
+			</div>
+			<div class="ui-form-field g-6 g-mobile-10">
+				<label for="country">Country</label>
+				<select id="country" class="ui-select">
+					<option value="">Hello</option>
+					<option value="">There</option>
+				</select>
+			</div>
+			<div class="ui-form-field g-6 g-mobile-10">
+				<label for="nation">Nation</label>
+				<select id="nation" class="ui-select">
+					<option value="">Hello</option>
+					<option value="">There</option>
+				</select>
+			</div>
+			<div class="ui-form-field g-10 g-mobile-10">
+				<div class="ui-textfield error">
+					<label for="street">Street</label>
+					<input id="street" type="text" />
+					<small>Please insert a valid street value</small>
+				</div>
+			</div>
+			<div class="ui-form-field g-2 g-mobile-10">
+				<div class="ui-textfield error">
+					<label for="street_number">Street Number</label>
+					<input id="street_number" type="text" />
+					<small>Please insert a valid street number </small>
+				</div>
+			</div>
+			<div class="ui-form-field g-4 g-mobile-10">
+				<div class="ui-textfield">
+					<label for="company">Company</label>
+					<input id="company" type="text" />
+				</div>
+			</div>
+			<div class="ui-form-field g-8 g-mobile-10">
+				<div class="ui-textfield">
+					<label for="role">Role</label>
+					<input id="role" type="text" />
+				</div>
+			</div>
+			<div class="ui-form-field g-12 g-mobile-10">
+				<div class="ui-textfield">
+					<label for="message">Message</label>
+					<textarea id="message"></textarea>
+				</div>
+			</div>
+			<div class="ui-form-field">
+				<p class="g-12 g-mobile-10">I am intereded in:</p>
+				<div class="ui-checkbox g-2 g-mobile-10">
+					<label for="news">
+						<input type="checkbox" id="news" name="news">
+						<span class="ui-checkbox-marker"></span>
+						<span class="ui-checkbox-label">News</span>
+					</label>
+				</div>
+				<div class="ui-checkbox g-2 g-mobile-10">
+					<label for="sport">
+						<input type="checkbox" id="sport" name="sport">
+						<span class="ui-checkbox-marker"></span>
+						<span class="ui-checkbox-label">Sport</span>
+					</label>
+				</div>
+				<div class="ui-checkbox g-8 g-mobile-10">
+					<label for="IT">
+						<input type="checkbox" id="IT" name="IT">
+						<span class="ui-checkbox-marker"></span>
+						<span class="ui-checkbox-label">IT</span>
+					</label>
+				</div>
+			</div>
+			<div class="ui-form-field g-12 g-mobile-10">
+				<p class="full-width">I want to be subscribed to: </p>
+				<div class="ui-checkbox inline-field">
+					<label for="newsletter">
+						<input type="checkbox" id="newsletter" name="newsletter">
+						<span class="ui-checkbox-marker"></span>
+						<span class="ui-checkbox-label">Newsletter </span>
+					</label>
+				</div>
+				<div class="ui-checkbox inline-field">
+					<label for="push">
+						<input type="checkbox" id="push" name="push">
+						<span class="ui-checkbox-marker"></span>
+						<span class="ui-checkbox-label">Push notification service</span>
+					</label>
+				</div>
+			</div>
+			<div class="ui-form-field g-12 g-mobile-10">
+				<div class="ui-toggle round">
+					<label for="toggle-2">
+						<input id="toggle-2" type="checkbox">
+						<span class="ui-toggle-handle"></span>
+						<span class="ui-toggle-label">I accept the conditions</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="ui-form-field g-12 g-mobile-10 text-right">
+				<input type="reset" value="Reset" class="ui-btn no-shadow" />
+				<input type="submit" value="Send form" class="ui-btn no-shadow primary" />
+			</div>
+		</form>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/nouislider/distribute/jquery.nouislider.all.js"></script>
+	<script src="bower_components/jquery-selectric/dist/jquery.selectric.js"></script>
+	<script>
+		$("#slider1").noUiSlider({
+			start: 50,
+			format: wNumb({
+				decimals: 0
+			}),
+			range: {
+				'min': 0,
+				'max': 100
+			}
+		}).Link('lower').to('-inline-<span class="value min-val"></span>', function(value) {
+			$(this).html(value);
+		});
+
+		$('.ui-select').selectric({
+			animate: {
+				duration: 200
+			}
+		});
+	</script>
+</body>
+</html>

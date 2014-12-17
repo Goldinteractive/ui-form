@@ -1,0 +1,54 @@
+@import "compass";
+
+// variables
+// Default grid values
+$default-column-width:60px;
+$default-gutter-width:20px;
+$default-columns-amount: 12;
+
+// Breakpoint
+$break-small: 320px;
+$break-medium: 768px;
+$break-large: 1024px;
+
+// Buttons style
+$button-bg-primary: #0075a2;
+$button-text-primary: white;
+
+// Toggle color
+$toggle-unchecked-color: #999;
+$toggle-checked-color: #0075a2;
+
+@import "style";
+@import "bower_components/gi-ui-grid/style";
+@import "bower_components/gi-ui-buttons/style";
+@import "bower_components/gi-ui-checkbox/style";
+@import "bower_components/gi-ui-toggle/style";
+@import "bower_components/gi-ui-textfield/style";
+@import "bower_components/gi-ui-slider/style";
+@import "bower_components/gi-ui-select/style";
+
+@include create-grid();
+
+/**
+ * Use the following functions to create other custom grids
+ */
+
+
+
+@include create-grid(
+	10, // columns number
+	6%,  // column width
+	2%,  // gutter width
+	mobile, // special grid class id
+	true, // is it Fluid?
+	'only screen and (max-width: #{$break-large})' // media query
+);
+
+.container {
+	width:$break-large;
+	margin:0 auto;
+	@media only screen and (max-width:$break-large) {
+		width: 100%;
+	}
+}

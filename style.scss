@@ -2,6 +2,8 @@
 
 // this variable could come from the text field scss file
 $textfield-label-vertical-margin:  0.5rem !default;
+$success-color: green !default;
+$error-color: #cc0000 !default;
 
 // Default variables
 $form-field-vertial-margin: 0.5rem !default;
@@ -22,5 +24,15 @@ $form-labels-vertial-margin: $textfield-label-vertical-margin !default;
 	}
 	.inline-field {
 		display: inline-block;
+	}
+	.error {
+		small {
+			color: $error-color;
+		}
+	}
+	.success {
+		small {
+			color: $success-color;
+		}
 	}
 }

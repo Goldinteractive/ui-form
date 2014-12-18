@@ -39,7 +39,7 @@ $break-large: 1024px;
 );
 
 .container {
-	width:$break-large;
+	width:gridsystem-width();
 	margin:0 auto;
 	@media only screen and (max-width:$break-large) {
 		width: 100%;

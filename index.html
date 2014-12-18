@@ -12,7 +12,7 @@
 			margin:0;
 			/*font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;*/
 		}
-		h1,h2,h3,h4 {
+		h1,h2,h3,h4,p, .ui-textfield label {
 			font-family:'Aktiv Grotesk W01 Regular' , Helvetica, Arial, sans-serif;
 		}
 		button,input, textarea {
@@ -146,6 +146,30 @@
 					</label>
 				</div>
 			</div>
+			<div class="ui-form-field g-12 g-mobile-10">
+				<p>How did you find this form?</p>
+				<div class="ui-radio">
+					<label for="github">
+						<input type="radio" id="github" name="info" checked="">
+						<span class="ui-radio-marker"></span>
+						<span class="ui-radio-label">github</span>
+					</label>
+				</div>
+				<div class="ui-radio">
+					<label for="dude">
+						<input type="radio" id="dude" name="info" checked="">
+						<span class="ui-radio-marker"></span>
+						<span class="ui-radio-label">from a dude</span>
+					</label>
+				</div>
+				<div class="ui-radio">
+					<label for="random">
+						<input type="radio" id="random" name="info" checked="">
+						<span class="ui-radio-marker"></span>
+						<span class="ui-radio-label">random</span>
+					</label>
+				</div>
+			</div>
 			<div class="ui-form-field g-12 g-mobile-10 text-right">
 				<button type="reset" class="ui-btn no-shadow">Reset</button>
 				<button type="submit" data-style="zoom-out" class="ui-btn no-shadow primary ladda-button">Send form</button>
@@ -180,7 +204,7 @@
 				duration: 200
 			}
 		});
-		$( 'button[type=submit]').ladda('bind',{ timeout: 5000 });
+		$( 'button[type=submit]').ladda('bind',{ timeout: 2000 });
 		$('form').on('submit',function(e){
 			e.preventDefault();
 		})

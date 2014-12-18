@@ -16,16 +16,18 @@
   "dependencies": {
     "gi-ui-buttons": "master",
     "gi-ui-slider": "master",
-    "gi-ui-checkbox": "master",
+    "gi-ui-checkbox": "*",
     "gi-ui-toggle": "master",
     "gi-ui-grid": "master",
     "gi-ui-textfield": "*",
     "gi-ui-select": "~0.0.2",
-    "jquery": "~2.1.2"
+    "ladda": "~0.9.4",
+    "gi-ui-radio": "master"
   },
   "resolutions": {
     "gi-ui-buttons": "master",
     "gi-ui-slider": "master",
-    "gi-ui-toggle": "master"
+    "gi-ui-toggle": "master",
+    "gi-ui-checkbox": "d8c26e2384"
   }
 }

@@ -11,18 +11,11 @@ $break-small: 320px;
 $break-medium: 768px;
 $break-large: 1024px;
 
-// Buttons style
-$button-bg-primary: #0075a2;
-$button-text-primary: white;
-
-// Toggle color
-$toggle-unchecked-color: #999;
-$toggle-checked-color: #0075a2;
-
 @import "style";
 @import "bower_components/gi-ui-grid/style";
 @import "bower_components/gi-ui-buttons/style";
 @import "bower_components/gi-ui-checkbox/style";
+@import "bower_components/gi-ui-radio/style";
 @import "bower_components/gi-ui-toggle/style";
 @import "bower_components/gi-ui-textfield/style";
 @import "bower_components/gi-ui-slider/style";

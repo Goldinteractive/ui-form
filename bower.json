@@ -14,20 +14,15 @@
     "tests"
   ],
   "dependencies": {
-    "gi-ui-buttons": "master",
-    "gi-ui-slider": "master",
+    "gi-ui-buttons": "*",
+    "gi-ui-slider": "*",
     "gi-ui-checkbox": "*",
-    "gi-ui-toggle": "master",
-    "gi-ui-grid": "master",
+    "gi-ui-toggle": "*",
+    "gi-ui-grid": "*",
     "gi-ui-textfield": "*",
-    "gi-ui-select": "~0.0.2",
+    "gi-ui-select": "*",
     "ladda": "~0.9.4",
-    "gi-ui-radio": "master"
-  },
-  "resolutions": {
-    "gi-ui-buttons": "master",
-    "gi-ui-slider": "master",
-    "gi-ui-toggle": "master",
-    "gi-ui-checkbox": "d8c26e2384"
+    "gi-ui-radio": "*",
+    "gi-scss-mixins": "~0.2.0"
   }
 }

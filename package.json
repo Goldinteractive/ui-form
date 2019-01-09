@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Goldinteractive/ui-form/issues"
   },
-  "homepage": "https://github.com/Goldinteractive/ui-form#readme"
+  "homepage": "https://github.com/Goldinteractive/ui-form#readme",
+  "dependencies": {
+    "gi-scss-global-variables": "https://github.com/Goldinteractive/scss-global-variables",
+    "gi-scss-mixins": "https://github.com/Goldinteractive/scss-mixins",
+    "gi-ui-buttons": "https://github.com/Goldinteractive/ui-buttons",
+    "gi-ui-checkbox": "https://github.com/Goldinteractive/ui-checkbox",
+    "gi-ui-textfield": "https://github.com/Goldinteractive/ui-textfield",
+    "ladda": "https://github.com/hakimel/Ladda",
+    "ui-radio": "https://github.com/Goldinteractive/ui-radio"
+  }
 }
